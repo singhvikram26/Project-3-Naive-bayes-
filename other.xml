@@ -1,0 +1,20 @@
+<application>
+  <component name="EduSettings">
+    <option name="lastTimeChecked" value="1555481919300" />
+    <option name="shownCourseIds">
+      <set>
+        <option value="53507" />
+        <option value="53531" />
+        <option value="53539" />
+        <option value="53669" />
+      </set>
+    </option>
+  </component>
+  <component name="PyTestFrameworkService">
+    <option name="SDK_TO_PYTEST">
+      <map>
+        <entry key="C:\Users\singh\venv\python3.6\Scripts\python.exe" value="false" />
+      </map>
+    </option>
+  </component>
+</application>
