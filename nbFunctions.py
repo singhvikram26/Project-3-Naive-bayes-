@@ -175,24 +175,19 @@ def evaluateBias(y_pred,y_sensitive):
     di = 0
     count1=0
     count2 = 0
-    b= 0
-    a=0
-    y_pred=y_pred.flatten()
+
+
 
     for i in range(0,y_pred.shape[0]):
-        if y_pred[i]==2:
-            a+= 1
-            if y_sensitive[i]!=1:
+        if y_pred[i]==2 and y_sensitive[i]!=1:
                  count1+=1
 
     for i in range(0,y_pred.shape[0]):
-        if y_pred[i]==2:
-            b+= 1
-            if y_sensitive[i]==1:
+        if y_pred[i]==2 and y_sensitive[i]==1:
                 count2+=1
 
-    num = a/count1
-    den = b/count2
+    num = count1
+    den = count2
     print(num)
     print(den)
     di= (num)/(den)
